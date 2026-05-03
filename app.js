@@ -1,7 +1,4 @@
-
 // OTVARANJE I ZATVARANJE MENIJA (HAMBURGER)
-
-
 
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
@@ -12,16 +9,14 @@ if (menuToggle && mainNav) {
   menuToggle.addEventListener("click", () => {
     // ako meni nema klasu "open", ona je doda. Ako je ima, ona je obriše.
     mainNav.classList.toggle("open");
-    
-    //  Ako meni sada ima klasu "open", promijeni tekst dugmeta u iksik (✕). 
+
+    //  Ako meni sada ima klasu "open", promijeni tekst dugmeta u iksik (✕).
     // Ako nema, vrati na hamburger ikonicu (☰).
     menuToggle.textContent = mainNav.classList.contains("open") ? "✕" : "☰";
   });
 }
 
-
 //  AUTOMATSKO ZATVARANJE MENIJA NA KLIK LINKA
-
 
 // Selektujemo sve linkove unutar navigacije i prolazimo kroz njih jedan po jedan (forEach)
 document.querySelectorAll(".nav-link").forEach((link) => {
@@ -39,9 +34,7 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   });
 });
 
-
 //  OZNAČAVANJE AKTIVNE STRANICE (Korisničko iskustvo - UX)
-
 
 const currentPage = window.location.pathname.split("/").pop() || "index.html"; // pocetna strana
 
@@ -49,7 +42,7 @@ const currentPage = window.location.pathname.split("/").pop() || "index.html"; /
 document.querySelectorAll(".nav-link").forEach((link) => {
   // Čitamo kuda taj specifični link vodi
   const linkPage = link.getAttribute("href");
-  
+
   // Prvo obrišemo klasu "active" sa svih linkova
   link.classList.remove("active");
 

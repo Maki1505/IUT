@@ -337,6 +337,7 @@ textarea {
   justify-content: space-between;
   gap: 16px;
   align-items: flex-start;
+  flex-wrap: wrap; /* Ispravka za mobilne telefone */
 }
 
 .panel-top h2 {
@@ -1040,6 +1041,10 @@ textarea {
     text-align: center;
     max-width: 100%;
   }
+
+  .hero-panel {
+    padding: 16px;
+  }
 }
 
 /* CARD HOVER ANIMATION */
@@ -1078,10 +1083,6 @@ textarea {
 .gallery-card:hover img {
   transform: scale(1.08);
 }
-
-/* ========================= */
-/* ERASMUS PAGE STYLE */
-/* ========================= */
 
 .erasmus-section {
   padding: 80px 10%;
@@ -1173,10 +1174,6 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
-
-/* ========================= */
-/* ERASMUS PAGE */
-/* ========================= */
 
 .erasmus-intro {
   padding: 80px 0;
