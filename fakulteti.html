@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fakulteti | IUT Travnik</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand" aria-label="IUT Travnik početna">
+          <div class="brand-logo-wrap">
+            <img
+              class="brand-logo"
+              src="assets/iut.jpg"
+              alt="IUT Travnik logo"
+            />
+          </div>
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" class="nav-link active">Početna</a>
+          <a href="studenti.html" class="nav-link">Studenti</a>
+          <a href="fakulteti.html" class="nav-link">Fakulteti</a>
+          <a href="erasmus.html" class="nav-link">Erasmus+</a>
+          <a href="galerija.html" class="nav-link">Galerija</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="studenti.html" class="header-btn">Konkurs za upis</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Otvori meni">
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="hero"
+        style="
+          background:
+            linear-gradient(
+              110deg,
+              rgba(8, 54, 93, 0.92),
+              rgba(11, 79, 138, 0.84)
+            ),
+            url(&quot;assets/slide3.jpg&quot;) center/cover;
+        "
+      >
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="hero-tag">
+              🎓 Fakulteti · Studijski programi · Akademski razvoj
+            </div>
+            <h1>Fakulteti i studijski programi IUT Travnik</h1>
+            <p>
+              Pregled fakulteta, smjerova i studijskih ciklusa na
+              Internacionalnom univerzitetu Travnik. Ova stranica služi kao
+              centralno mjesto za upoznavanje sa akademskom ponudom
+              univerziteta.
+            </p>
+            <div class="hero-actions">
+              <a href="studenti.html" class="hero-btn primary"
+                >Upis studenata</a
+              >
+            </div>
+          </div>
+
+          <aside class="hero-panel reveal">
+            <div class="panel-top">
+              <div>
+                <h2>Akademska ponuda</h2>
+                <p>Od tehničkih i društvenih do interdisciplinarnih studija.</p>
+              </div>
+              <span class="panel-label">I, II, III ciklus</span>
+            </div>
+
+            <div class="panel-media-grid">
+              <div class="panel-media-main">
+                <img src="assets/slide2.jpg" alt="IUT Travnik fakulteti" />
+              </div>
+              <div class="panel-media-side">
+                <img src="assets/slide4.jpg" alt="IUT Travnik studenti" />
+              </div>
+            </div>
+
+            <div class="panel-grid">
+              <div class="panel-mini">
+                <strong>Tehnički studiji</strong
+                ><span>IT, politehnika, saobraćaj i srodne oblasti.</span>
+              </div>
+              <div class="panel-mini">
+                <strong>Društveni studiji</strong
+                ><span>Pravo, ekonomija i menadžment.</span>
+              </div>
+              <div class="panel-mini">
+                <strong>Ekologija</strong
+                ><span>Studiji održivosti i zaštite okoliša.</span>
+              </div>
+              <div class="panel-mini">
+                <strong>Viši ciklusi</strong
+                ><span>Napredni akademski razvoj i usavršavanje.</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <h2>Pregled fakulteta</h2>
+              <p>
+                Izdvojeni fakulteti i oblasti studiranja sa kratkim opisima i
+                pregledom ciklusa studija.
+              </p>
+            </div>
+          </div>
+
+          <div class="faculty-grid">
+            <article class="faculty-card reveal">
+              <span class="faculty-badge">FIT</span>
+              <h3>Fakultet informacionih tehnologija</h3>
+              <p>
+                Namijenjen studentima koji žele razvijati znanja iz
+                programiranja, informacionih sistema, softverskog inženjeringa i
+                savremenih digitalnih tehnologija.
+              </p>
+              <ul>
+                <li>1. ciklus studija</li>
+                <li>2. ciklus studija</li>
+                <li>3. ciklus studija</li>
+              </ul>
+            </article>
+
+            <article class="faculty-card reveal">
+              <span class="faculty-badge">Ekonomija</span>
+              <h3>Ekonomski fakultet</h3>
+              <p>
+                Fokus na ekonomiji, menadžmentu, finansijama, marketingu i
+                savremenom poslovanju u domaćem i međunarodnom okruženju.
+              </p>
+              <ul>
+                <li>Poslovna ekonomija</li>
+                <li>Menadžment i marketing</li>
+                <li>Master i doktorski nivoi</li>
+              </ul>
+            </article>
+
+            <article class="faculty-card reveal">
+              <span class="faculty-badge">Pravo</span>
+              <h3>Pravni fakultet</h3>
+              <p>
+                Studij usmjeren na pravni sistem, zakonodavstvo, institucionalne
+                procese i razvoj analitičkog i argumentacijskog razmišljanja.
+              </p>
+              <ul>
+                <li>Osnovne pravne studije</li>
+                <li>Napredni akademski ciklusi</li>
+                <li>Praktična i teorijska osnova</li>
+              </ul>
+            </article>
+
+            <article class="faculty-card reveal">
+              <span class="faculty-badge">Ekologija</span>
+              <h3>Ekološki fakultet</h3>
+              <p>
+                Namijenjen studentima zainteresovanim za zaštitu okoliša,
+                održivi razvoj, ekološke politike i interdisciplinarni pristup
+                prirodnim resursima.
+              </p>
+              <ul>
+                <li>Zaštita okoliša</li>
+                <li>Ekološki menadžment</li>
+                <li>Viši ciklusi studija</li>
+              </ul>
+            </article>
+
+            <article class="faculty-card reveal">
+              <span class="faculty-badge">Saobraćaj</span>
+              <h3>Saobraćajni fakultet</h3>
+              <p>
+                Studij usmjeren na transportne sisteme, logistiku, sigurnost
+                saobraćaja i planiranje modernih komunikacijskih i prometnih
+                tokova.
+              </p>
+              <ul>
+                <li>Saobraćaj i transport</li>
+                <li>Logistički sistemi</li>
+                <li>Master i doktorski nivoi</li>
+              </ul>
+            </article>
+
+            <article class="faculty-card reveal">
+              <span class="faculty-badge">Politehnika</span>
+              <h3>Fakultet politehničkih nauka</h3>
+              <p>
+                Šira tehnička oblast koja može obuhvatiti građevinarstvo,
+                arhitekturu, inženjerski menadžment i druge primijenjene
+                discipline.
+              </p>
+              <ul>
+                <li>Inženjerske oblasti</li>
+                <li>Primijenjena znanja</li>
+                <li>Interdisciplinarni pristup</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <h2>Zašto studirati na IUT Travnik</h2>
+              <p>
+                Svaki fakultet na univerzitetu može biti predstavljen ne samo
+                kroz naziv, nego i kroz prednosti, mogućnosti razvoja i buduće
+                karijerne pravce.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <div class="feature-icon">📘</div>
+              <h3>Različite akademske oblasti</h3>
+              <p>
+                Od informacionih tehnologija do prava, ekonomije, ekologije i
+                saobraćaja.
+              </p>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="feature-icon">🎯</div>
+              <h3>Više ciklusa studija</h3>
+              <p>
+                Mogućnost nastavka obrazovanja kroz osnovni, master i doktorski
+                nivo.
+              </p>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="feature-icon">🌍</div>
+              <h3>Povezanost sa međunarodnim programima</h3>
+              <p>
+                Studijski razvoj dodatno se širi kroz Erasmus+ i druge oblike
+                saradnje.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <article class="footer-card">
+            <div class="footer-mini-topbar">
+              <div class="footer-mini-topbar-left">
+                <a class="footer-mini-link" href="index.html">Početna</a>
+                <a class="footer-mini-link" href="studenti.html">Studenti</a>
+                <a class="footer-mini-link" href="erasmus.html">Erasmus+</a>
+              </div>
+              <div class="footer-mini-topbar-right">
+                <span class="footer-mini-info"
+                  >Studentske službe: +387 (30) 509 682</span
+                >
+                <a
+                  class="footer-mini-link"
+                  href="mailto:studentska@iu-travnik.com"
+                  >studentska@iu-travnik.com</a
+                >
+              </div>
+            </div>
+
+            <div class="footer-brand">
+              <img src="assets/iut.jpg" alt="IUT Travnik logo" />
+              <div>
+                <h3>Internacionalni univerzitet Travnik</h3>
+                <p>
+                  Univerzitetski portal sa pregledom fakulteta, studentskih
+                  informacija, Erasmus+ programa i aktuelnosti.
+                </p>
+              </div>
+            </div>
+
+            <a href="studenti.html" class="footer-cta">Prijava za studij</a>
+
+            <div class="footer-links-grid">
+              <div class="footer-column">
+                <h4>Portal</h4>
+                <ul>
+                  <li><a href="index.html">Početna</a></li>
+
+                  <li><a href="studenti.html">Studenti</a></li>
+                  <li><a href="fakulteti.html">Fakulteti</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h4>Međunarodno</h4>
+                <ul>
+                  <li><a href="erasmus.html">Erasmus+</a></li>
+
+                  <li><a href="galerija.html">Galerija</a></li>
+                  <li><a href="studenti.html">Vodič za studente</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h4>Kontakt</h4>
+                <ul>
+                  <li>
+                    <a href="mailto:studentska@iu-travnik.com"
+                      >studentska@iu-travnik.com</a
+                    >
+                  </li>
+                  <li><a href="#">+387 30 509 682</a></li>
+                  <li><a href="#">Aleja Konzula – Meljanac bb</a></li>
+                  <li><a href="#">Travnik, BiH</a></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="footer-card">
+            <h3>Kontakt informacije</h3>
+            <ul class="footer-contact-list">
+              <li>
+                <span>📍</span>
+                <div>
+                  <strong>Adresa</strong><br />Aleja Konzula – Meljanac bb,
+                  Travnik
+                </div>
+              </li>
+              <li>
+                <span>☎</span>
+                <div><strong>Telefon</strong><br />+387 30 509 682</div>
+              </li>
+              <li>
+                <span>✉</span>
+                <div>
+                  <strong>Email</strong><br /><a
+                    href="mailto:studentska@iu-travnik.com"
+                    >studentska@iu-travnik.com</a
+                  >
+                </div>
+              </li>
+              <li>
+                <span>🏢</span>
+                <div>
+                  <strong>Info centar</strong><br />Informacije za buduće i
+                  postojeće studente
+                </div>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Internacionalni univerzitet Travnik</p>
+          <div class="footer-socials">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

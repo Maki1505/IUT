@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erasmus+ | IUT Travnik</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand" aria-label="IUT Travnik početna">
+          <div class="brand-logo-wrap">
+            <img
+              class="brand-logo"
+              src="assets/iut.jpg"
+              alt="IUT Travnik logo"
+            />
+          </div>
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" class="nav-link">Početna</a>
+
+          <a href="studenti.html" class="nav-link">Studenti</a>
+
+          <a href="fakulteti.html" class="nav-link">Fakulteti</a>
+
+          <a href="erasmus.html" class="nav-link active">Erasmus+</a>
+
+          <a href="galerija.html" class="nav-link">Galerija</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="studenti.html" class="header-btn"> Konkurs za upis </a>
+
+          <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section
+      class="hero"
+      style="
+        background: url(&quot;assets/erasmus.jpg&quot;) center/cover no-repeat;
+      "
+    >
+      <div class="container"></div>
+    </section>
+
+    <!-- INTRO -->
+
+    <section class="erasmus-intro">
+      <div class="container">
+        <h1>Erasmus+ program razmjene</h1>
+
+        <p>
+          Erasmus+ program omogućava studentima da dio svog studija provedu na
+          partnerskim univerzitetima širom Evrope. Studenti kroz ovaj program
+          imaju priliku upoznati nove kulture, steći međunarodno iskustvo i
+          unaprijediti svoje akademske i profesionalne vještine.
+        </p>
+
+        <img
+          src="assets/emir i ja.jpg"
+          style="margin: 0 auto"
+          alt="Erasmus studenti"
+        />
+      </div>
+    </section>
+
+    <section
+      class="erasmus-benefits"
+      style="
+        background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+        padding: 80px 20px;
+        font-family: &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana, sans-serif;
+      "
+    >
+      <!-- css da se isproba inline i internal-->
+      <style>
+        .benefits-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 30px;
+          margin-top: 40px;
+        }
+        .benefit-card {
+          background: #ffffff;
+          padding: 40px 25px;
+          border-radius: 16px;
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+          text-align: center;
+          transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+          border-bottom: 4px solid #2563eb;
+        }
+        .benefit-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+      </style>
+
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; text-align: center"
+      >
+        <h2
+          style="
+            color: #0f172a;
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 10px;
+          "
+        >
+          Prednosti Erasmus+ programa
+        </h2>
+        <p
+          style="
+            color: #64748b;
+            font-size: 18px;
+            margin-top: 0;
+            max-width: 600px;
+            margin: 0 auto;
+          "
+        >
+          Otkrijte zašto je studentska mobilnost najbolja investicija u vašu
+          budućnost i karijeru.
+        </p>
+
+        <div class="benefits-grid">
+          <!-- Kartica 1 -->
+          <div class="benefit-card">
+            <div style="font-size: 48px; margin-bottom: 15px">🌍</div>
+            <h3
+              style="
+                color: #1e293b;
+                font-size: 20px;
+                margin-bottom: 12px;
+                font-weight: 600;
+              "
+            >
+              Međunarodno iskustvo
+            </h3>
+            <p
+              style="
+                color: #475569;
+                font-size: 15px;
+                line-height: 1.6;
+                margin: 0;
+              "
+            >
+              Studiranje na prestižnim partnerskim univerzitetima širom Evrope.
+            </p>
+          </div>
+
+          <!-- Kartica 2 -->
+          <div class="benefit-card">
+            <div style="font-size: 48px; margin-bottom: 15px">🗣️</div>
+            <h3
+              style="
+                color: #1e293b;
+                font-size: 20px;
+                margin-bottom: 12px;
+                font-weight: 600;
+              "
+            >
+              Novi jezici
+            </h3>
+            <p
+              style="
+                color: #475569;
+                font-size: 15px;
+                line-height: 1.6;
+                margin: 0;
+              "
+            >
+              Mogućnost brzog usavršavanja stranih jezika kroz svakodnevnu
+              komunikaciju.
+            </p>
+          </div>
+
+          <!-- Kartica 3 -->
+          <div class="benefit-card">
+            <div style="font-size: 48px; margin-bottom: 15px">🤝</div>
+            <h3
+              style="
+                color: #1e293b;
+                font-size: 20px;
+                margin-bottom: 12px;
+                font-weight: 600;
+              "
+            >
+              Nove kulture
+            </h3>
+            <p
+              style="
+                color: #475569;
+                font-size: 15px;
+                line-height: 1.6;
+                margin: 0;
+              "
+            >
+              Upoznavanje različitih tradicija i inovativnih načina studiranja.
+            </p>
+          </div>
+
+          <!-- Kartica 4 -->
+          <div class="benefit-card">
+            <div style="font-size: 48px; margin-bottom: 15px">🎓</div>
+            <h3
+              style="
+                color: #1e293b;
+                font-size: 20px;
+                margin-bottom: 12px;
+                font-weight: 600;
+              "
+            >
+              Profesionalni razvoj
+            </h3>
+            <p
+              style="
+                color: #475569;
+                font-size: 15px;
+                line-height: 1.6;
+                margin: 0;
+              "
+            >
+              Sticanje međunarodnog iskustva koje je izuzetno cijenjeno na
+              tržištu rada.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 style="text-align: center; font-size: 38px; padding-bottom: 10px">
+        Partners
+      </h2>
+      <div class="container grid">
+        <img class="img" src="assets/ceepus-logo1-300x300.jpg" />
+        <img class="img" src="assets/slide3.jpg" />
+        <img class="img" src="assets/slide4.jpg" />
+        <img class="img" src="assets/studenti 2.jpg" />
+        <img class="img" src="assets/slike.jpg" />
+        <img class="img" src="assets/ja.jpg" />
+        <img class="img" src="assets/studenti 4.jpg" />
+        <img class="img" src="assets/faks.jpg" />
+        <img class="img" src="assets/studenti.jpg" />
+      </div>
+    </section>
+
+    <section class="erasmus-gallery">
+      <div class="container">
+        <h2>Erasmus iskustva</h2>
+
+        <div class="gallery-grid">
+          <img src="assets/erasmus2.jpg" />
+
+          <img src="assets/erasmus3.jpg" />
+
+          <img src="assets/erasmus4.jpg" />
+
+          <img src="assets/erasmus5.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-brand">
+          <img src="assets/iut.jpg" alt="IUT Travnik logo" />
+
+          <div>
+            <h3>Internacionalni univerzitet Travnik</h3>
+
+            <p>
+              Univerzitetski portal sa pregledom fakulteta, studentskih
+              informacija, Erasmus+ programa i aktuelnosti.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+
+          <a href="#"><i class="fab fa-youtube"></i></a>
+
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <p class="footer-copy">© 2026 Internacionalni univerzitet Travnik</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
