@@ -25,15 +25,18 @@
         </a>
 
         <nav class="main-nav" id="mainNav">
-          <a href="index.html" class="nav-link active">Početna</a>
-          <a href="studenti.html" class="nav-link">Studenti</a>
-          <a href="fakulteti.html" class="nav-link">Fakulteti</a>
-          <a href="erasmus.html" class="nav-link">Erasmus+</a>
-          <a href="galerija.html" class="nav-link">Galerija</a>
+          <a href="index.html" class="nav-link active" data-key="navPocetna">Početna</a>
+          <a href="studenti.html" class="nav-link" data-key="navStudenti">Studenti</a>
+          <a href="fakulteti.html" class="nav-link" data-key="navFakulteti">Fakulteti</a>
+          <a href="erasmus.html" class="nav-link" data-key="navErasmus">Erasmus+</a>
+          <a href="galerija.html" class="nav-link" data-key="navGalerija">Galerija</a>
         </nav>
 
         <div class="header-actions">
-          <a href="studenti.html" class="header-btn">Konkurs za upis</a>
+          <!-- Cisto dugme za jezik sa klasom -->
+          <button id="langToggle" class="lang-toggle-btn">EN</button>
+          
+          <a href="studenti.html" class="header-btn" data-key="btnKonkurs">Konkurs za upis</a>
           <button class="menu-toggle" id="menuToggle" aria-label="Otvori meni">
             ☰
           </button>
@@ -46,45 +49,41 @@
 
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="hero-tag">
+          <div class="hero-tag" data-key="heroTag">
             🎓 Akademska zajednica · Erasmus+ · Fakulteti · Studijski programi
           </div>
 
-          <h1>Internacionalni univerzitet Travnik</h1>
+          <h1 data-key="heroNaslov">Internacionalni univerzitet Travnik</h1>
 
-          <p>
+          <p data-key="heroOpis">
             Moderan univerzitetski portal sa pregledom fakulteta, studentskih
             informacija, međunarodne saradnje i aktuelnosti na jednom mjestu.
           </p>
 
           <div class="hero-actions">
-            <a href="fakulteti.html" class="hero-btn primary"
-              >Pregled fakulteta</a
-            >
-            <a href="studenti.html" class="hero-btn secondary"
-              >Upis studenata</a
-            >
+            <a href="fakulteti.html" class="hero-btn primary" data-key="btnPregled">Pregled fakulteta</a>
+            <a href="studenti.html" class="hero-btn secondary" data-key="btnUpis">Upis studenata</a>
           </div>
 
           <div class="hero-stats">
             <article class="stat-box">
-              <strong>7+</strong>
-              <span>Fakulteta i akademskih oblasti</span>
+              <strong data-key="stat1Broj">7+</strong>
+              <span data-key="stat1Opis">Fakulteta i akademskih oblasti</span>
             </article>
 
             <article class="stat-box">
-              <strong>Erasmus+</strong>
-              <span>Međunarodna saradnja i mobilnost</span>
+              <strong data-key="stat2Broj">Erasmus+</strong>
+              <span data-key="stat2Opis">Međunarodna saradnja i mobilnost</span>
             </article>
 
             <article class="stat-box">
-              <strong>3 ciklusa</strong>
-              <span>Osnovni, master i doktorski studij</span>
+              <strong data-key="stat3Broj">3 ciklusa</strong>
+              <span data-key="stat3Opis">Osnovni, master i doktorski studij</span>
             </article>
 
             <article class="stat-box">
-              <strong>2025/26</strong>
-              <span>Aktuelne informacije za studente</span>
+              <strong data-key="stat4Broj">2025/26</strong>
+              <span data-key="stat4Opis">Aktuelne informacije za studente</span>
             </article>
           </div>
         </div>
@@ -92,12 +91,12 @@
         <aside class="hero-panel reveal">
           <div class="panel-top">
             <div>
-              <h2>Studiraj uz moderan pristup</h2>
-              <p>
+              <h2 data-key="panelNaslov">Studiraj uz moderan pristup</h2>
+              <p data-key="panelOpis">
                 Akademsko okruženje, stvarne informacije i pregledna struktura.
               </p>
             </div>
-            <span class="panel-label">Otvoren upis</span>
+            <span class="panel-label" data-key="panelLabel">Otvoren upis</span>
           </div>
 
           <div class="panel-media-grid">
@@ -111,23 +110,23 @@
 
           <div class="panel-grid">
             <div class="panel-mini">
-              <strong>Fakulteti</strong>
-              <span>Jasan pregled studijskih programa i ciklusa.</span>
+              <strong data-key="miniFakulteti">Fakulteti</strong>
+              <span data-key="miniFakultetiOpis">Jasan pregled studijskih programa i ciklusa.</span>
             </div>
 
             <div class="panel-mini">
-              <strong>Studenti</strong>
-              <span>Upis, školarina, dokumentacija i podrška.</span>
+              <strong data-key="miniStudenti">Studenti</strong>
+              <span data-key="miniStudentiOpis">Upis, školarina, dokumentacija i podrška.</span>
             </div>
 
             <div class="panel-mini">
-              <strong>Erasmus+</strong>
-              <span>Mobilnost, partnerstva i međunarodne prilike.</span>
+              <strong data-key="miniErasmus">Erasmus+</strong>
+              <span data-key="miniErasmusOpis">Mobilnost, partnerstva i međunarodne prilike.</span>
             </div>
 
             <div class="panel-mini">
-              <strong>Aktuelno</strong>
-              <span>Vijesti, događaji i važna obavještenja.</span>
+              <strong data-key="miniAktuelno">Aktuelno</strong>
+              <span data-key="miniAktuelnoOpis">Vijesti, događaji i važna obavještenja.</span>
             </div>
           </div>
         </aside>
@@ -137,8 +136,8 @@
     <section class="campus-life">
       <div class="container">
         <div class="campus-header">
-          <h2>Studentski život na IUT Travnik</h2>
-          <p>
+          <h2 data-key="campusNaslov">Studentski život na IUT Travnik</h2>
+          <p data-key="campusOpis">
             Studiranje na Internacionalnom Univerzitetu Travnik nije samo
             obrazovanje, već i iskustvo koje uključuje međunarodnu saradnju,
             projekte, druženje i razvoj profesionalnih vještina.
@@ -149,28 +148,28 @@
           <div class="campus-card">
             <img src="assets/studenti 4.jpg" alt="Studentski život" />
             <div class="campus-overlay">
-              <h3>Studentske aktivnosti</h3>
+              <h3 data-key="campusAktivnosti">Studentske aktivnosti</h3>
             </div>
           </div>
 
           <div class="campus-card">
             <img src="assets/ja.jpg" alt="Predavanja" />
             <div class="campus-overlay">
-              <h3>Studentske priče</h3>
+              <h3 data-key="campusPrice">Studentske priče</h3>
             </div>
           </div>
 
           <div class="campus-card">
             <img src="assets/faks.jpg" alt="Kampus" />
             <div class="campus-overlay">
-              <h3>Studentski kampus</h3>
+              <h3 data-key="campusKampus">Studentski kampus</h3>
             </div>
           </div>
 
           <div class="campus-card">
             <img src="assets/vilnius.jpg" alt="Međunarodni studenti" />
             <div class="campus-overlay">
-              <h3>Međunarodna saradnja</h3>
+              <h3 data-key="campusSaradnja">Međunarodna saradnja</h3>
             </div>
           </div>
         </div>
@@ -180,11 +179,11 @@
     <section class="student-section">
       <div class="container">
         <div class="student-box">
-          <h2 style="text-align: center; font-size: 38px">Biblioteka</h2>
+          <h2 style="text-align: center; font-size: 38px" data-key="bibNaslov">Biblioteka</h2>
 
-          <h2 class="cycle-title">O nama</h2>
+          <h2 class="cycle-title" data-key="bibOnama">O nama</h2>
 
-          <p>
+          <p data-key="bibOpis1">
             Univerzitetska biblioteka, osnovana 2010. godine, služi kao središte
             podrške akademskoj zajednici kroz sistematsko prikupljanje, obradu,
             čuvanje i distribuciju bibliotečke građe i informacija. Naša
@@ -198,9 +197,9 @@
             poštovati odredbe Pravilnika o radu biblioteke.
           </p>
 
-          <h3>Naša misija</h3>
+          <h3 data-key="bibMisija">Naša misija</h3>
 
-          <p>
+          <p data-key="bibOpis2">
             Cilj Univerzitetske biblioteke je da obezbijedi pristup relevantnim
             resursima potrebnim za kvalitetno obrazovanje i istraživanje.
             Ulažemo napore da naši korisnici imaju pristup najnovijim
@@ -208,41 +207,34 @@
             razvoju i akademskom uspjehu.
           </p>
 
-          <h3>Struktura i resursi</h3>
+          <h3 data-key="bibStruktura">Struktura i resursi</h3>
 
-          <p>
+          <p data-key="bibOpis3">
             Biblioteka se sastoji od različitih odjeljenja, koja su prilagođena
             potrebama naših fakulteta:
           </p>
 
           <ul>
             <li>
-              <span style="font-weight: bold">Ekonomski fakultet:</span> Resursi
-              iz ekonomije, menadžmenta i poslovanja.
+              <span style="font-weight: bold" data-key="bibEkonomski">Ekonomski fakultet:</span> <span data-key="bibEkoOpis">Resursi iz ekonomije, menadžmenta i poslovanja.</span>
             </li>
             <li>
-              <span style="font-weight: bold">Saobraćajni fakultet:</span>
-              Materijali vezani za transportne sisteme i logistiku.
+              <span style="font-weight: bold" data-key="bibSaobracajni">Saobraćajni fakultet:</span> <span data-key="bibSaobOpis">Materijali vezani za transportne sisteme i logistiku.</span>
             </li>
             <li>
-              <span style="font-weight: bold">Politehički fakultet:</span>
-              Knjige i časopisi iz oblasti inženjerstva i tehnologije.
+              <span style="font-weight: bold" data-key="bibPolitehnicki">Politehički fakultet:</span> <span data-key="bibPoliOpis">Knjige i časopisi iz oblasti inženjerstva i tehnologije.</span>
             </li>
             <li>
-              <span style="font-weight: bold">Ekološki fakultet:</span> Izvori
-              informacija o zaštiti životne sredine i održivom razvoju.
+              <span style="font-weight: bold" data-key="bibEkoloski">Ekološki fakultet:</span> <span data-key="bibEkolOpis">Izvori informacija o zaštiti životne sredine i održivom razvoju.</span>
             </li>
             <li>
-              <span style="font-weight: bold">Mediji i komunikacije:</span>
-              Resursi za proučavanje medijskih teorija i praksi.
+              <span style="font-weight: bold" data-key="bibMediji">Mediji i komunikacije:</span> <span data-key="bibMedijiOpis">Resursi za proučavanje medijskih teorija i praksi.</span>
             </li>
             <li>
-              <span style="font-weight: bold">Pravni fakultet:</span> Pristup
-              zakonodavstvu, pravnoj teoriji i praksi.
+              <span style="font-weight: bold" data-key="bibPravni">Pravni fakultet:</span> <span data-key="bibPravniOpis">Pristup zakonodavstvu, pravnoj teoriji i praksi.</span>
             </li>
             <li>
-              <span style="font-weight: bold">FIT:</span> Savremeni materijali
-              iz oblasti IT-a i računarskih nauka.
+              <span style="font-weight: bold" data-key="bibFit">FIT:</span> <span data-key="bibFitOpis">Savremeni materijali iz oblasti IT-a i računarskih nauka.</span>
             </li>
           </ul>
         </div>
@@ -251,35 +243,35 @@
 
     <section class="stats-section">
       <div class="container">
-        <h2 class="section-title">IUT Travnik u brojkama</h2>
-        <p class="section-subtitle">
+        <h2 class="section-title" data-key="statsNaslov">IUT Travnik u brojkama</h2>
+        <p class="section-subtitle" data-key="statsOpis">
           Internacionalni univerzitet Travnik pruža kvalitetno obrazovanje uz
-          savremene studijske programe i međunarodnu saradnju.
+          savremene studijske programs i međunarodnu saradnju.
         </p>
 
         <div class="stats-grid">
           <div class="stat-card">
             <i class="fa-solid fa-user-graduate"></i>
             <h3>2500+</h3>
-            <p>Studenata</p>
+            <p data-key="statCard1Tekst">Studenata</p>
           </div>
 
           <div class="stat-card">
             <i class="fa-solid fa-building-columns"></i>
             <h3>6</h3>
-            <p>Fakulteta</p>
+            <p data-key="statCard2Tekst">Fakulteta</p>
           </div>
 
           <div class="stat-card">
             <i class="fa-solid fa-book-open"></i>
             <h3>20+</h3>
-            <p>Studijskih programa</p>
+            <p data-key="statCard3Tekst">Studijskih programa</p>
           </div>
 
           <div class="stat-card">
             <i class="fa-solid fa-globe"></i>
             <h3>15+</h3>
-            <p>Partnerskih univerziteta</p>
+            <p data-key="statCard4Tekst">Partnerskih univerziteta</p>
           </div>
         </div>
       </div>
@@ -305,12 +297,12 @@
           <article class="footer-card">
             <div class="footer-mini-topbar">
               <div class="footer-mini-topbar-left">
-                <a class="footer-mini-link" href="index.html">Početna</a>
-                <a class="footer-mini-link" href="studenti.html">Studenti</a>
-                <a class="footer-mini-link" href="erasmus.html">Erasmus+</a>
+                <a class="footer-mini-link" href="index.html" data-key="footerMiniPocetna">Početna</a>
+                <a class="footer-mini-link" href="studenti.html" data-key="footerMiniStudenti">Studenti</a>
+                <a class="footer-mini-link" href="erasmus.html" data-key="footerMiniErasmus">Erasmus+</a>
               </div>
               <div class="footer-mini-topbar-right">
-                <span class="footer-mini-info"
+                <span class="footer-mini-info" data-key="footerStudSluzba"
                   >Studentska služba: +387 (30) 509 682</span
                 >
                 <a
@@ -324,37 +316,37 @@
             <div class="footer-brand">
               <img src="assets/iut.jpg" alt="IUT Travnik logo" />
               <div>
-                <h3>Internacionalni univerzitet Travnik</h3>
-                <p>
+                <h3 data-key="footerUniverzitet">Internacionalni univerzitet Travnik</h3>
+                <p data-key="footerUniverzitetOpis">
                   Univerzitetski portal sa pregledom fakulteta, studentskih
                   informacija, Erasmus+ programa i aktuelnosti.
                 </p>
               </div>
             </div>
 
-            <a href="studenti.html" class="footer-cta">Prijava za studij</a>
+            <a href="studenti.html" class="footer-cta" data-key="footerPrijava">Prijava za studij</a>
 
             <div class="footer-links-grid">
               <div class="footer-column">
-                <h4>Portal</h4>
+                <h4 data-key="footerPortalNaslov">Portal</h4>
                 <ul>
-                  <li><a href="index.html">Početna</a></li>
-                  <li><a href="studenti.html">Studenti</a></li>
-                  <li><a href="fakulteti.html">Fakulteti</a></li>
+                  <li><a href="index.html" data-key="footerLinkPocetna">Početna</a></li>
+                  <li><a href="studenti.html" data-key="footerLinkStudenti">Studenti</a></li>
+                  <li><a href="fakulteti.html" data-key="footerLinkFakulteti">Fakulteti</a></li>
                 </ul>
               </div>
 
               <div class="footer-column">
-                <h4>Međunarodno</h4>
+                <h4 data-key="footerMedjunarodnoNaslov">Međunarodno</h4>
                 <ul>
-                  <li><a href="erasmus.html">Erasmus+</a></li>
-                  <li><a href="galerija.html">Galerija</a></li>
-                  <li><a href="studenti.html">Vodič za studente</a></li>
+                  <li><a href="erasmus.html" data-key="footerLinkErasmus">Erasmus+</a></li>
+                  <li><a href="galerija.html" data-key="footerLinkGalerija">Galerija</a></li>
+                  <li><a href="studenti.html" data-key="footerVodic">Vodič za studente</a></li>
                 </ul>
               </div>
 
               <div class="footer-column">
-                <h4>Kontakt</h4>
+                <h4 data-key="footerKontaktNaslov">Kontakt</h4>
                 <ul>
                   <li>
                     <a href="mailto:studentska@iu-travnik.com"
@@ -362,41 +354,43 @@
                     >
                   </li>
                   <li><a href="#">+387 30 509 682</a></li>
-                  <li><a href="#">Aleja Konzula – Meljanac bb</a></li>
-                  <li><a href="#">Travnik, BiH</a></li>
+                  <li><a href="#" data-key="footerAdresaLink">Aleja Konzula – Meljanac bb</a></li>
+                  <li><a href="#" data-key="footerGrad">Travnik, BiH</a></li>
                 </ul>
               </div>
             </div>
           </article>
 
+          <!-- Vraćena originalna struktura footera sa dodanim data-key -->
           <article class="footer-card">
-            <h3>Kontakt informacije</h3>
+            <h3 data-key="footerKontaktNaslov2">Kontakt informacije</h3>
             <ul class="footer-contact-list">
               <li>
                 <span>📍</span>
                 <div>
-                  <strong>Adresa</strong><br />Aleja Konzula – Meljanac bb,
-                  Travnik
+                  <strong data-key="footerAdresaNaslov">Adresa</strong><br />
+                  <span data-key="footerAdresaTxt">Aleja Konzula – Meljanac bb, Travnik</span>
                 </div>
               </li>
               <li>
                 <span>☎</span>
-                <div><strong>Telefon</strong><br />+387 30 509 682</div>
+                <div>
+                  <strong data-key="footerTelefonNaslov">Telefon</strong><br />
+                  <span>+387 30 509 682</span>
+                </div>
               </li>
               <li>
                 <span>✉</span>
                 <div>
-                  <strong>Email</strong><br /><a
-                    href="mailto:studentska@iu-travnik.com"
-                    >studentska@iu-travnik.com</a
-                  >
+                  <strong data-key="footerEmailNaslov">Email</strong><br />
+                  <a href="mailto:studentska@iu-travnik.com">studentska@iu-travnik.com</a>
                 </div>
               </li>
               <li>
                 <span>🏢</span>
                 <div>
-                  <strong>Info centar</strong><br />Informacije za buduće i
-                  postojeće studente
+                  <strong data-key="footerInfoNaslov">Info centar</strong><br />
+                  <span data-key="footerInfoOpis">Informacije za buduće i postojeće studente</span>
                 </div>
               </li>
             </ul>
@@ -404,41 +398,18 @@
         </div>
 
         <div class="footer-bottom">
-          <p>© 2026 Internacionalni Univerzitet Travnik</p>
+          <p data-key="footerCopyright">© 2026 Internacionalni Univerzitet Travnik</p>
           <div class="footer-socials">
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Facebook"
-            >
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
-
-            <a
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="YouTube"
-            >
+            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTube">
               <i class="fa-brands fa-youtube"></i>
             </a>
-
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram"
-            >
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
               <i class="fa-brands fa-instagram"></i>
             </a>
-
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn"
-            >
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
           </div>
