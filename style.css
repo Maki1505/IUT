@@ -337,7 +337,7 @@ textarea {
   justify-content: space-between;
   gap: 16px;
   align-items: flex-start;
-  flex-wrap: wrap; /* Ispravka za mobilne telefone */
+  flex-wrap: wrap; 
 }
 
 .panel-top h2 {
@@ -817,7 +817,7 @@ textarea {
   align-items: flex-start;
 }
 
-.footer-contact-list span {
+.footer-contact-list li > span:first-child {
   width: 40px;
   height: 40px;
   border-radius: 12px;
@@ -1557,4 +1557,33 @@ textarea {
   color: #2c3e50; 
   transform: translateY(-2px); 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* ==========================================
+   EASTER EGG (TAJNO DUGME)
+   ========================================== */
+.easter-egg {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  z-index: 9999;
+  text-decoration: none;
+  opacity: 0; 
+  transform: scale(0.5);
+  transition: all 0.4s ease;
+  pointer-events: auto; 
+}
+
+.easter-egg:hover {
+  opacity: 1; 
+  transform: scale(1); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }

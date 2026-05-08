@@ -23,16 +23,20 @@
           </div>
         </a>
 
+        <!-- NAVIGACIJA -->
         <nav class="main-nav" id="mainNav">
-          <a href="index.html" class="nav-link active">Početna</a>
-          <a href="studenti.html" class="nav-link">Studenti</a>
-          <a href="fakulteti.html" class="nav-link">Fakulteti</a>
-          <a href="erasmus.html" class="nav-link">Erasmus+</a>
-          <a href="galerija.html" class="nav-link">Galerija</a>
+          <a href="index.html" class="nav-link" data-key="navPocetna">Početna</a>
+          <a href="studenti.html" class="nav-link active" data-key="navStudenti">Studenti</a>
+          <a href="fakulteti.html" class="nav-link" data-key="navFakulteti">Fakulteti</a>
+          <a href="erasmus.html" class="nav-link" data-key="navErasmus">Erasmus+</a>
+          <a href="galerija.html" class="nav-link" data-key="navGalerija">Galerija</a>
         </nav>
 
         <div class="header-actions">
-          <a href="studenti.html" class="header-btn">Konkurs za upis</a>
+          <!-- DUGME ZA JEZIK -->
+          <button id="langToggle" class="lang-toggle-btn">EN</button>
+          
+          <a href="studenti.html" class="header-btn" data-key="btnKonkurs">Konkurs za upis</a>
           <button class="menu-toggle" id="menuToggle" aria-label="Otvori meni">
             ☰
           </button>
@@ -42,7 +46,7 @@
 
     <section class="hero">
       <div class="container">
-        <h1>Studenti</h1>
+        <h1 data-key="studentiHeroNaslov">Studenti</h1>
       </div>
     </section>
 
@@ -56,100 +60,104 @@
 
     <section class="student-section">
       <div class="container">
+        <!-- I CIKLUS -->
         <div class="student-box">
-          <h2 class="cycle-title">Upis studenata na I ciklus studija</h2>
+          <h2 class="cycle-title" data-key="ciklus1Naslov">Upis studenata na I ciklus studija</h2>
 
-          <p>
+          <p data-key="ciklus1Opis">
             Univerzitet upisuje studente na osnovu Odluke o upisu uz saglasnost
             nadležnog ministarstva koja sadrži broj redovnih studenata, broj
             vanrednih studenata, broj stranih državljana i broj studenata za
             učenje na daljinu ukoliko su traženi zahtjevom i odobreni odlukom.
           </p>
 
-          <h3>Pravo na prijavu</h3>
+          <h3 data-key="pravoPrijavaNaslov">Pravo na prijavu</h3>
 
-          <p>
+          <p data-key="pravoPrijavaOpis">
             Pravo na prijavu konkursa za upis u prvu godinu studija imaju
             kandidati koji imaju završenu srednju četverogodišnju školu.
           </p>
 
-          <h3>Dokumenti potrebni za upis</h3>
+          <h3 data-key="dokCiklus1Naslov">Dokumenti potrebni za upis</h3>
 
           <ul>
-            <li>Molba za upis na I ciklus studija</li>
-            <li>Diploma o završenoj srednjoj školi</li>
-            <li>Svjedočanstva od 1. do 4. razreda srednje škole</li>
-            <li>Rješenje o nostrifikaciji obrazovne isprave</li>
-            <li>Uvjerenje o položenim ispitima (za studente koji prelaze)</li>
-            <li>Ovjeren nastavni plan i program</li>
-            <li>Izvod iz matične knjige rođenih</li>
-            <li>Uvjerenje o državljanstvu</li>
-            <li>Dvije fotografije 6x4</li>
+            <li data-key="dok1_1">Molba za upis na I ciklus studija</li>
+            <li data-key="dok1_2">Diploma o završenoj srednjoj školi</li>
+            <li data-key="dok1_3">Svjedočanstva od 1. do 4. razreda srednje škole</li>
+            <li data-key="dok1_4">Rješenje o nostrifikaciji obrazovne isprave</li>
+            <li data-key="dok1_5">Uvjerenje o položenim ispitima (za studente koji prelaze)</li>
+            <li data-key="dok1_6">Ovjeren nastavni plan i program</li>
+            <li data-key="dok1_7">Izvod iz matične knjige rođenih</li>
+            <li data-key="dok1_8">Uvjerenje o državljanstvu</li>
+            <li data-key="dok1_9">Dvije fotografije 6x4</li>
           </ul>
         </div>
 
+        <!-- II CIKLUS -->
         <div class="student-box">
-          <h2 class="cycle-title">Upis studenata na II ciklus studija</h2>
+          <h2 class="cycle-title" data-key="ciklus2Naslov">Upis studenata na II ciklus studija</h2>
 
-          <p>
+          <p data-key="ciklus2Opis">
             Pravo na prijavu konkursa za upis na II ciklus studija imaju
             kandidati koji imaju završen odgovarajući dodiplomski studij sa 180
             ili 240 ECTS bodova.
           </p>
 
-          <h3>Dokumenti potrebni za upis</h3>
+          <h3 data-key="dokCiklus2Naslov">Dokumenti potrebni za upis</h3>
 
           <ul>
-            <li>Molba za upis na II ciklus studija</li>
-            <li>Diploma i dodatak diplomi</li>
-            <li>Rješenje o nostrifikaciji obrazovne isprave</li>
-            <li>Uvjerenje o položenim ispitima</li>
-            <li>Biografija (CV)</li>
-            <li>Izvod iz matične knjige rođenih</li>
-            <li>Uvjerenje o državljanstvu</li>
-            <li>Dvije fotografije 6x4</li>
+            <li data-key="dok2_1">Molba za upis na II ciklus studija</li>
+            <li data-key="dok2_2">Diploma i dodatak diplomi</li>
+            <li data-key="dok2_3">Rješenje o nostrifikaciji obrazovne isprave</li>
+            <li data-key="dok2_4">Uvjerenje o položenim ispitima</li>
+            <li data-key="dok2_5">Biografija (CV)</li>
+            <li data-key="dok2_6">Izvod iz matične knjige rođenih</li>
+            <li data-key="dok2_7">Uvjerenje o državljanstvu</li>
+            <li data-key="dok2_8">Dvije fotografije 6x4</li>
           </ul>
         </div>
 
+        <!-- III CIKLUS -->
         <div class="student-box">
-          <h2 class="cycle-title">Upis studenata na III ciklus studija</h2>
+          <h2 class="cycle-title" data-key="ciklus3Naslov">Upis studenata na III ciklus studija</h2>
 
-          <p>
+          <p data-key="ciklus3Opis">
             Pravo na prijavu konkursa za upis na III ciklus studija imaju
             kandidati koji imaju završen magistarski studij sa najmanje 300 ECTS
             bodova.
           </p>
 
-          <h3>Dokumenti potrebni za upis</h3>
+          <h3 data-key="dokCiklus3Naslov">Dokumenti potrebni za upis</h3>
 
           <ul>
-            <li>Molba za upis na III ciklus studija</li>
-            <li>Obrasci (0,1,2 i 3)</li>
-            <li>Biografija (CV)</li>
-            <li>Diploma i dodatak diplomi</li>
-            <li>Rješenje o nostrifikaciji</li>
-            <li>Uvjerenje o položenim ispitima</li>
-            <li>Izvod iz matične knjige rođenih</li>
-            <li>Uvjerenje o državljanstvu</li>
-            <li>Dvije fotografije 6x4</li>
-            <li>Certifikat o poznavanju engleskog jezika</li>
+            <li data-key="dok3_1">Molba za upis na III ciklus studija</li>
+            <li data-key="dok3_2">Obrasci (0,1,2 i 3)</li>
+            <li data-key="dok3_3">Biografija (CV)</li>
+            <li data-key="dok3_4">Diploma i dodatak diplomi</li>
+            <li data-key="dok3_5">Rješenje o nostrifikaciji</li>
+            <li data-key="dok3_6">Uvjerenje o položenim ispitima</li>
+            <li data-key="dok3_7">Izvod iz matične knjige rođenih</li>
+            <li data-key="dok3_8">Uvjerenje o državljanstvu</li>
+            <li data-key="dok3_9">Dvije fotografije 6x4</li>
+            <li data-key="dok3_10">Certifikat o poznavanju engleskog jezika</li>
           </ul>
         </div>
       </div>
     </section>
 
+    <!-- IDENTIČAN, POPRAVLJEN FOOTER IZ INDEX.HTML -->
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
           <article class="footer-card">
             <div class="footer-mini-topbar">
               <div class="footer-mini-topbar-left">
-                <a class="footer-mini-link" href="index.html">Početna</a>
-                <a class="footer-mini-link" href="studenti.html">Studenti</a>
-                <a class="footer-mini-link" href="erasmus.html">Erasmus+</a>
+                <a class="footer-mini-link" href="index.html" data-key="footerMiniPocetna">Početna</a>
+                <a class="footer-mini-link" href="studenti.html" data-key="footerMiniStudenti">Studenti</a>
+                <a class="footer-mini-link" href="erasmus.html" data-key="footerMiniErasmus">Erasmus+</a>
               </div>
               <div class="footer-mini-topbar-right">
-                <span class="footer-mini-info"
+                <span class="footer-mini-info" data-key="footerStudSluzba"
                   >Studentska služba: +387 (30) 509 682</span
                 >
                 <a
@@ -163,37 +171,37 @@
             <div class="footer-brand">
               <img src="assets/iut.jpg" alt="IUT Travnik logo" />
               <div>
-                <h3>Internacionalni univerzitet Travnik</h3>
-                <p>
+                <h3 data-key="footerUniverzitet">Internacionalni univerzitet Travnik</h3>
+                <p data-key="footerUniverzitetOpis">
                   Univerzitetski portal sa pregledom fakulteta, studentskih
                   informacija, Erasmus+ programa i aktuelnosti.
                 </p>
               </div>
             </div>
 
-            <a href="studenti.html" class="footer-cta">Prijava za studij</a>
+            <a href="studenti.html" class="footer-cta" data-key="footerPrijava">Prijava za studij</a>
 
             <div class="footer-links-grid">
               <div class="footer-column">
-                <h4>Portal</h4>
+                <h4 data-key="footerPortalNaslov">Portal</h4>
                 <ul>
-                  <li><a href="index.html">Početna</a></li>
-                  <li><a href="studenti.html">Studenti</a></li>
-                  <li><a href="fakulteti.html">Fakulteti</a></li>
+                  <li><a href="index.html" data-key="footerLinkPocetna">Početna</a></li>
+                  <li><a href="studenti.html" data-key="footerLinkStudenti">Studenti</a></li>
+                  <li><a href="fakulteti.html" data-key="footerLinkFakulteti">Fakulteti</a></li>
                 </ul>
               </div>
 
               <div class="footer-column">
-                <h4>Međunarodno</h4>
+                <h4 data-key="footerMedjunarodnoNaslov">Međunarodno</h4>
                 <ul>
-                  <li><a href="erasmus.html">Erasmus+</a></li>
-                  <li><a href="galerija.html">Galerija</a></li>
-                  <li><a href="studenti.html">Vodič za studente</a></li>
+                  <li><a href="erasmus.html" data-key="footerLinkErasmus">Erasmus+</a></li>
+                  <li><a href="galerija.html" data-key="footerLinkGalerija">Galerija</a></li>
+                  <li><a href="studenti.html" data-key="footerVodic">Vodič za studente</a></li>
                 </ul>
               </div>
 
               <div class="footer-column">
-                <h4>Kontakt</h4>
+                <h4 data-key="footerKontaktNaslov">Kontakt</h4>
                 <ul>
                   <li>
                     <a href="mailto:studentska@iu-travnik.com"
@@ -201,41 +209,42 @@
                     >
                   </li>
                   <li><a href="#">+387 30 509 682</a></li>
-                  <li><a href="#">Aleja Konzula – Meljanac bb</a></li>
-                  <li><a href="#">Travnik, BiH</a></li>
+                  <li><a href="#" data-key="footerAdresaLink">Aleja Konzula – Meljanac bb</a></li>
+                  <li><a href="#" data-key="footerGrad">Travnik, BiH</a></li>
                 </ul>
               </div>
             </div>
           </article>
 
           <article class="footer-card">
-            <h3>Kontakt informacije</h3>
+            <h3 data-key="footerKontaktNaslov2">Kontakt informacije</h3>
             <ul class="footer-contact-list">
               <li>
                 <span>📍</span>
                 <div>
-                  <strong>Adresa</strong><br />Aleja Konzula – Meljanac bb,
-                  Travnik
+                  <strong data-key="footerAdresaNaslov">Adresa</strong><br />
+                  <span data-key="footerAdresaTxt">Aleja Konzula – Meljanac bb, Travnik</span>
                 </div>
               </li>
               <li>
                 <span>☎</span>
-                <div><strong>Telefon</strong><br />+387 30 509 682</div>
+                <div>
+                  <strong data-key="footerTelefonNaslov">Telefon</strong><br />
+                  <span>+387 30 509 682</span>
+                </div>
               </li>
               <li>
                 <span>✉</span>
                 <div>
-                  <strong>Email</strong><br /><a
-                    href="mailto:studentska@iu-travnik.com"
-                    >studentska@iu-travnik.com</a
-                  >
+                  <strong data-key="footerEmailNaslov">Email</strong><br />
+                  <a href="mailto:studentska@iu-travnik.com">studentska@iu-travnik.com</a>
                 </div>
               </li>
               <li>
                 <span>🏢</span>
                 <div>
-                  <strong>Info centar</strong><br />Informacije za buduće i
-                  postojeće studente
+                  <strong data-key="footerInfoNaslov">Info centar</strong><br />
+                  <span data-key="footerInfoOpis">Informacije za buduće i postojeće studente</span>
                 </div>
               </li>
             </ul>
@@ -243,41 +252,18 @@
         </div>
 
         <div class="footer-bottom">
-          <p>© 2026 Internacionalni Univerzitet Travnik</p>
+          <p data-key="footerCopyright">© 2026 Internacionalni Univerzitet Travnik</p>
           <div class="footer-socials">
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Facebook"
-            >
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
-
-            <a
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="YouTube"
-            >
+            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTube">
               <i class="fa-brands fa-youtube"></i>
             </a>
-
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram"
-            >
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
               <i class="fa-brands fa-instagram"></i>
             </a>
-
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn"
-            >
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
           </div>
